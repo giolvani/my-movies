@@ -1,8 +1,15 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { fetchPopular } from './api/tmdb';
 import './App.css';
 
 function App() {
   const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    fetchPopular().then(({data, error}) => {
+      console.log(data, error);
+    });
+  }, []);
 
   return (
     <>
