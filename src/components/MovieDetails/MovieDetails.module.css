@@ -1,0 +1,149 @@
+.title {
+  background-color: #8d8176;
+  padding: 0 24px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+}
+
+.title h4 {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.content {
+  padding: 24px;
+}
+
+.details {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.detailsImage {
+  height: 170px;
+  margin-right: 16px;
+}
+
+.detailsImage img {
+  width: auto;
+  height: 100%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.infoContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.topInfo {
+  margin-bottom: auto;
+}
+
+.topInfo h2 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+}
+
+.topInfo p {
+  font-size: 14px;
+  font-style: italic;
+  line-height: 24px;
+  color: #666;
+  margin: 0;
+}
+
+.infoContent h3 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 16px;
+  align-self: flex-start;
+}
+
+.info button {
+  background-color: #6d6d6d;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  padding: 12px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.description {
+  line-height: 1.5;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.trailer {
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.trailer h6 {
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 4px;
+}
+
+.trailer button {
+  background: #fafafa;
+  border: none;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  color: #666;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.trailer button::before {
+  content: '';
+  width: 0;
+  height: 0;
+  margin-left: 6px;
+  margin-right: 20px;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 8px solid #746A64;
+}
+
+.trailer button::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  margin-right: 16px;
+  border: 1px solid #746A64;
+  border-radius: 50%;
+  position: absolute;
+  left: 10px;
+}

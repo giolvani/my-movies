@@ -1,8 +1,7 @@
-import React from 'react';
-import Home from '@/components/Home/Home';
+import Home from '@/components/Home';
 import Layout from '@/pages/Layout';
 
-const HomePage: React.FC = () => {
+const HomePage = () => {
   return (
     <Layout>
       <Home />

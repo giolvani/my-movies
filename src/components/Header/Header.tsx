@@ -1,0 +1,14 @@
+import styles from './Header.module.css';
+
+export default function Header() {
+  return (
+    <header className={styles.header}>
+      <h1 className={styles.title}>Pop Movies</h1>
+      <button className={styles.menu}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+  );
+}
