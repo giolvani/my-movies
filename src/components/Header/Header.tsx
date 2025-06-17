@@ -1,7 +1,7 @@
 import styles from './Header.module.css';
 import { useHeader } from '@/hooks/useHeader';
 import { Link } from 'react-router-dom';
-import arrowLeft from '@/assets/arrow-left.svg';
+import arrowLeft from '@/lib/assets/arrow-left.svg';
 
 export default function Header() {
   const { title, showBackButton } = useHeader();
