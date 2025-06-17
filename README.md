@@ -50,11 +50,11 @@ npm run build
 <div align="center">
   <div style="display: flex; flex-direction: row;">
     <div style="margin-right: 10px;">
-      <img src="https://raw.githubusercontent.com/giolvani/my-movies/main/public/screenshot-home.png" width="400" alt="Popular Movies Page">
+      <img src="https://raw.githubusercontent.com/giolvani/my-movies/main/public/screenshot-home.png" width="300" alt="Popular Movies Page">
       <p><em>Popular Movies Page</em></p>
     </div>
     <div>
-      <img src="https://raw.githubusercontent.com/giolvani/my-movies/main/public/screenshot-details.png" width="400" alt="Movie Details View">
+      <img src="https://raw.githubusercontent.com/giolvani/my-movies/main/public/screenshot-details.png" width="300" alt="Movie Details View">
       <p><em>Movie Details View</em></p>
     </div>
   </div>
