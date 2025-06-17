@@ -1,4 +1,4 @@
-import { TMDB_TOKEN, API_BASE_URL } from '@/constants';
+import { TMDB_TOKEN, API_BASE_URL } from '@/lib/constants';
 import type { ApiResponse, MovieList, MovieDetails } from './types';
 
 const DEFAULT_LANGUAGE = 'en-US';

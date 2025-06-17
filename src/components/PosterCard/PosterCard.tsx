@@ -1,4 +1,4 @@
-import { IMAGE_BASE_URL } from '@/constants';
+import { IMAGE_BASE_URL } from '@/lib/constants';
 import { Link } from 'react-router-dom';
 import styles from './PosterCard.module.css';
 

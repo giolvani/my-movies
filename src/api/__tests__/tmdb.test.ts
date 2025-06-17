@@ -1,6 +1,6 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { fetchPopular, fetchTopRated, fetchMovieById } from '../tmdb';
-import { API_BASE_URL } from '@/constants';
+import { API_BASE_URL } from '@/lib/constants';
 
 // Mock global fetch
 const mockFetch = vi.fn();
