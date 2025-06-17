@@ -1,5 +1,5 @@
 import styles from './Header.module.css';
-import { useHeader } from '@/hooks/useHeader';
+import { useHeader } from '@/lib/hooks/useHeader';
 import { Link } from 'react-router-dom';
 import arrowLeft from '@/lib/assets/arrow-left.svg';
 

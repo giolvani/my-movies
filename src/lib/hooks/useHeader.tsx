@@ -1,4 +1,4 @@
 import { useContext } from 'react';
-import HeaderContext from '../context/HeaderContext';
+import HeaderContext from '@/lib/context/HeaderContext';
 
 export const useHeader = () => useContext(HeaderContext);

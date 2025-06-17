@@ -1,5 +1,5 @@
 import Header from "@/components/Header/Header";
-import HeaderProvider from "@/context/HeaderProvider";
+import HeaderProvider from "@/lib/context/HeaderProvider";
 import type { ReactNode } from "react";
 
 interface LayoutProps {
