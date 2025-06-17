@@ -101,7 +101,4 @@ npm run build
 ### APIs
 - TMDB (The Movie Database) API
 
-## License
-
-MIT
 
