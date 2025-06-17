@@ -2,7 +2,7 @@ import Home from '@/pages/Home';
 import Details from '@/pages/Details';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import '@/styles/global.css';
+import '@/lib/styles/global.css';
 
 function App() {
   return (
