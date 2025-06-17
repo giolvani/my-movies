@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import styles from './MovieDetails.module.css';
-import { fetchMovieById } from '@/api/tmdb';
+import { fetchMovieById } from '@/lib/api/tmdb';
 import { IMAGE_BASE_URL } from '@/lib/constants';
-import { mapMovieDetailsToMovie } from '@/api/mappers/movieMapper';
+import { mapMovieDetailsToMovie } from '@/lib/api/mappers/movieMapper';
 import type { Movie } from './types';
 
 interface MovieDetailsProps {

@@ -1,5 +1,5 @@
-import { filterVideos } from '@/api/helpers';
-import type { MovieDetails } from '@/api/types';
+import { filterVideos } from '@/lib/api/helpers';
+import type { MovieDetails } from '@/lib/api/types';
 import type { Movie, Video } from '@/components/MovieDetails/types';
 
 export function mapMovieDetailsToMovie(movieDetails: MovieDetails): Movie {

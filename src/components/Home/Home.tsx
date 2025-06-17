@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useEffect } from 'react';
-import { fetchPopular } from '../../api/tmdb';
+import { fetchPopular } from '../../lib/api/tmdb';
 import MovieList from '@/components/MovieList/MovieList';
 
 export default function Home() {
