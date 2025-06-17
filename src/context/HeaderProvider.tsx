@@ -2,21 +2,19 @@ import { useState } from 'react';
 import type { ReactNode } from 'react';
 import HeaderContext from './HeaderContext';
 
-// Custom provider component
-export const HeaderProvider = ({ 
+export const HeaderProvider = ({
   children,
-  initialTitle = 'Pop Movies'
-}: { 
-  children: ReactNode,
-  initialTitle?: string
+  initialTitle = 'Pop Movies',
+  initialShowBackButton = false
+}: {
+  children: ReactNode;
+  initialTitle?: string;
+  initialShowBackButton?: boolean;
 }) => {
   const [title, setTitle] = useState(initialTitle);
+  const [showBackButton, setShowBackButton] = useState(initialShowBackButton);
 
-  return (
-    <HeaderContext.Provider value={{ title, setTitle }}>
-      {children}
-    </HeaderContext.Provider>
-  );
+  return <HeaderContext.Provider value={{ title, setTitle, showBackButton, setShowBackButton }}>{children}</HeaderContext.Provider>;
 };
 
 export default HeaderProvider;

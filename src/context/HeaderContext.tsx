@@ -3,12 +3,15 @@ import { createContext } from 'react';
 export interface HeaderContextType {
   title: string;
   setTitle: (title: string) => void;
+  showBackButton: boolean;
+  setShowBackButton: (showBackButton: boolean) => void;
 }
 
-// Create context with default values
 const HeaderContext = createContext<HeaderContextType>({
-  title: 'Pop Movies',
+  title: 'Movies List',
   setTitle: () => {},
+  showBackButton: false,
+  setShowBackButton: () => {},
 });
 
 export default HeaderContext;

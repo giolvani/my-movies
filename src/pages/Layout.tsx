@@ -5,11 +5,12 @@ import type { ReactNode } from "react";
 interface LayoutProps {
   children: ReactNode;
   pageTitle?: string;
+  showBackButton?: boolean;
 }
 
-export default function Layout({ children, pageTitle = 'Pop Movies' }: LayoutProps) {
+export default function Layout({ children, pageTitle = 'Pop Movies', showBackButton = false }: LayoutProps) {
   return (
-    <HeaderProvider initialTitle={pageTitle}>
+    <HeaderProvider initialTitle={pageTitle} initialShowBackButton={showBackButton}>
       <div className="container">
         <div className="wrapper">
           <div className="application">

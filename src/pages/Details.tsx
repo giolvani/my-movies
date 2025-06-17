@@ -6,7 +6,7 @@ const DetailsPage = () => {
   const { id } = useParams<{ id: string }>();
 
   return (
-    <Layout pageTitle="Movie Details">
+    <Layout pageTitle="Movie Details" showBackButton={true}>
       <MovieDetails id={id} />
     </Layout>
   );
