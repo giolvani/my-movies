@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { IMAGE_BASE_URL } from '@/lib/constants';
 import { Link } from 'react-router-dom';
 import styles from './PosterCard.module.css';
@@ -13,4 +14,4 @@ const PosterCard = ({ movie }: PosterCardProps) => (
   </Link>
 );
 
-export default PosterCard;
+export default memo(PosterCard);

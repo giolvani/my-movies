@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import { useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { fetchPopular } from '../../lib/api/tmdb';
 import MovieList from '@/components/MovieList/MovieList';
 
@@ -17,7 +16,9 @@ export default function Home() {
     });
   }, []);
 
+  const memoizedMovies = useMemo(() => movies, [movies]);
+
   return (
-    <MovieList movies={movies} loading={loading} />
+    <MovieList movies={memoizedMovies} loading={loading} />
   );
 }
