@@ -3,7 +3,7 @@ import Layout from '@/pages/Layout';
 
 const HomePage = () => {
   return (
-    <Layout>
+    <Layout pageTitle="Pop Movies">
       <Home />
     </Layout>
   );
