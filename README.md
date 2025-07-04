@@ -82,7 +82,7 @@ npm run build
 - Improve loading states
 - Show movie trailers in a modal instead of a new page
 - Implement responsive design improvements
-- Load pages lazyly to improve performance
+- Load pages lazily to improve performance
 - Increase code coverage with unit and integration tests
 - Error handling and boundary error display
 
