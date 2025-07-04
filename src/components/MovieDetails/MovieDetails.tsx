@@ -14,14 +14,17 @@ const MovieDetails = ({ id }: MovieDetailsProps) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (id) {
-      fetchMovieById(id).then(({ data }) => {
-        if (data) {
-          setMovie(mapMovieDetailsToMovie(data));
-        }
-        setLoading(false);
-      });
+    if (!id) {
+      setLoading(false);
+      return;
     }
+
+    fetchMovieById(id).then(({ data }) => {
+      if (data) {
+        setMovie(mapMovieDetailsToMovie(data));
+      }
+      setLoading(false);
+    });
   }, [id]);
 
   const movieYear = useMemo(() => {
