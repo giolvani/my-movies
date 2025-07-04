@@ -125,5 +125,20 @@ describe('TMDB API', () => {
       expect(result.data).toEqual(mockMovie);
       expect(result.error).toBeNull();
     });
+
+    it('should handle fetch errors', async () => {
+      // Mock failed response
+      mockFetch.mockResolvedValueOnce({
+        ok: false,
+        text: async () => 'API Error',
+        statusText: 'Bad Request'
+      });
+
+      const result = await fetchMovieById('123');
+
+      // Assertions
+      expect(result.data).toBeNull();
+      expect(result.error).toBe('API Error');
+    });
   });
 });
