@@ -24,9 +24,9 @@ cd my-movies
 cp .env.sample .env.local
 ```
 
-2. Update `.env.local` with your TMDB API token:
+2. Update `.env.local` with your TMDB API token (`VITE_TMDB_TOKEN`):
 ```
-TMDB_TOKEN=your_tmdb_api_token_here
+VITE_TMDB_TOKEN=your_tmdb_api_token_here
 ```
 
 ### Installation and Running
