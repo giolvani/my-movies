@@ -1,10 +1,10 @@
 import { useMemo } from 'react';
 import styles from './MovieList.module.css';
 import PosterCard from '@/components/PosterCard/PosterCard';
+import type { MovieSummary } from '@/lib/api/types';
 
 interface MovieListProps {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  movies: any[];
+  movies: MovieSummary[];
   loading: boolean;
 }
 

@@ -1,10 +1,10 @@
 import { useState, useEffect, useMemo } from 'react';
-import { fetchPopular } from '../../lib/api/tmdb';
+import { fetchPopular } from '@/lib/api/tmdb';
 import MovieList from '@/components/MovieList/MovieList';
+import type { MovieSummary } from '@/lib/api/types';
 
 export default function Home() {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const [movies, setMovies] = useState<any[]>([]);
+  const [movies, setMovies] = useState<MovieSummary[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
