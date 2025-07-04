@@ -2,10 +2,10 @@ import { memo } from 'react';
 import { IMAGE_BASE_URL } from '@/lib/constants';
 import { Link } from 'react-router-dom';
 import styles from './PosterCard.module.css';
+import type { MovieSummary } from '@/lib/api/types';
 
 interface PosterCardProps {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  movie: any;
+  movie: MovieSummary;
 }
 
 const PosterCard = ({ movie }: PosterCardProps) => (
